@@ -31,5 +31,5 @@ depends: [
   "dune"
   "ocaml" {>= "4.08.0"}
 ]
-build: ["ocaml" "pkg/pkg.ml" "build" "--dev-pkg" "%{dev}%"]
+build: [ "dune" "build" "-p" name "-j" jobs "@install" "@runtest" {with-test} ]
 dev-repo: "git+https://github.com/dune-universe/ptime.git"
