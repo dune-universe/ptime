@@ -1,5 +1,5 @@
 description = "POSIX time for OCaml"
-version = "%%VERSION_NUM%%"
+version = "1.2.0"
 requires = ""
 archive(byte) = "ptime.cma"
 archive(native) = "ptime.cmxa"
@@ -10,7 +10,7 @@ exists_if = "ptime.cma ptime.cmxa"
 package "clock" (
   directory = "clock"
   description = "The ptime.clock library"
-  version = "%%VERSION_NUM%%"
+  version = "1.2.0"
   requires = "ptime"
   exports = "ptime"
   archive(byte) = "ptime_clock.cma"
@@ -22,7 +22,7 @@ package "clock" (
 
   package "os" (
     description = "The ptime.clock.os library (deprecated)"
-    version = "%%VERSION_NUM%%"
+    version = "1.2.0"
     requires = "ptime.clock"
     exports = "ptime.clock"
     warning = "Deprecated, use the ptime.clock library."
@@ -32,7 +32,7 @@ package "clock" (
 package "top" (
   directory = "top"
   description = "The ptime.top library"
-  version = "%%VERSION_NUM%%"
+  version = "1.2.0"
   requires = "ptime"
   archive(byte) = "ptime_top.cma"
   archive(native) = "ptime_top.cmxa"
